@@ -40,12 +40,20 @@ time {
   border-bottom: none;
 }
 
+#content {
+  min-height: 400px;
+}
+
 body >div > div {
   background: $bg;
 }
 
 body>header h1 a, body>header h1 a:visited, body>header h1 a:hover {
   color: #1abc9c;
+}
+
+body>header {
+  padding-top: 1em;
 }
 
 header hgroup {
@@ -74,3 +82,4 @@ body > div > div { border-right-width: 0px;}
 aside.sidebar {
   display: none;
 }
+
