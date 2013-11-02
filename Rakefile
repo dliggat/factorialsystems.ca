@@ -10,6 +10,8 @@ document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
 deploy_default = "rsync"
+deploy_default = "s3"
+s3_bucket      = "www.factorialsystems.ca"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -234,6 +236,12 @@ task :copydot, :source, :dest do |t, args|
   end
 end
 
+desc "Deploy website via s3cmd"
+task :s3 do
+  puts "## Deploying website via s3cmd"
+  ok_failed system("s3cmd sync --acl-public --reduced-redundancy public/* s3://#{s3_bucket}/")
+end
+
 desc "Deploy website via rsync"
 task :rsync do
   exclude = ""
@@ -248,7 +256,7 @@ desc "deploy public directory to github pages"
 multitask :push do
   puts "## Deploying branch to Github Pages "
   puts "## Pulling any updates from Github Pages "
-  cd "#{deploy_dir}" do 
+  cd "#{deploy_dir}" do
     system "git pull"
   end
   (Dir["#{deploy_dir}/*"]).each { |f| rm_rf(f) }
