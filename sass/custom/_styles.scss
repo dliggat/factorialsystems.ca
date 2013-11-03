@@ -58,6 +58,17 @@ body>header {
   padding-top: 1em;
 }
 
+article {
+  header {
+    padding-top: 0em;
+//    background: none;
+  }
+}
+
+.entry-title {
+    font-family: 'Raleway', sans-serif;
+}
+
 header hgroup {
   text-align: center;
   display: normal;
