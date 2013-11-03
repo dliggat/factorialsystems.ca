@@ -30,6 +30,10 @@ body > footer {
 }
 body {
   max-width: 720px;
+  p {
+    color: #505050;
+    font-size: 0.9em;
+  }
 }
 
 time {
@@ -61,6 +65,7 @@ body>header {
 article {
   header {
     padding-top: 0em;
+    padding-bottom: 0em;
 //    background: none;
   }
   h1 {

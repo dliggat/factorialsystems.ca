@@ -3,6 +3,6 @@ layout: page
 title: "expertise"
 comments: true
 sharing: true
-footer: true
+footer: false
 ---
 This is expertise
