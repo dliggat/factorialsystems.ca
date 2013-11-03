@@ -114,4 +114,11 @@ aside.sidebar {
   font-weight: bold;
 }
 
+ul>li {
+  margin-left: 2em;
+}
+h4+p { // adjacent-sibling selector.
+  margin-left: 1em;
+}
+
 
