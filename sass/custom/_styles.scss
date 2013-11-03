@@ -77,8 +77,9 @@ article {
   }
 
   h4 {
-    margin-bottom: 0.4em;
-      font-family: 'Raleway', sans-serif;
+    margin-bottom: 0.5em;
+      font-family: $sans;
+      font-weight: bold;
   }
 }
 
