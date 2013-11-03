@@ -43,7 +43,7 @@ time {
 }
 
 #content {
-  min-height: 400px;
+  min-height: 500px;
 }
 
 body >div > div {
@@ -63,11 +63,16 @@ article {
     padding-top: 0em;
 //    background: none;
   }
+  h1 {
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+  }
+
+  h4 {
+    margin-bottom: 0.4em;
+  }
 }
 
-.entry-title {
-    font-family: 'Raleway', sans-serif;
-}
 
 header hgroup {
   text-align: center;
