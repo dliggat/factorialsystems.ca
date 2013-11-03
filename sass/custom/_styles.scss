@@ -2,6 +2,7 @@
 // Add styles here to make changes without digging in too much
 
 $bg: #FFFFFF;
+$header-color: #09A5CC;
 
 html {
   background: $bg;
@@ -10,11 +11,11 @@ body > nav {
   background: $bg;
   border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  font-family: 'Raleway', sans-serif;
+  font-family: $sans;
 
   a {
 //    font-family: 'Helvetica Neue', sans-serif;
-  font-family: 'Raleway', sans-serif;
+  font-family: $sans;
     font-weight: normal;
     font-size: 1em;
     text-shadow: none;
@@ -30,7 +31,7 @@ body > footer {
 }
 body {
   max-width: 720px;
-  p {
+  p, ul>li {
     color: #505050;
     font-size: 0.9em;
   }
@@ -55,7 +56,8 @@ body >div > div {
 }
 
 body>header h1 a, body>header h1 a:visited, body>header h1 a:hover {
-  color: #1abc9c;
+//  color: #1abc9c;  // green
+  color: $header-color;
 }
 
 body>header {
@@ -70,11 +72,13 @@ article {
   }
   h1 {
       font-family: 'Raleway', sans-serif;
-      font-weight: bold;
+    color: $header-color;
+    font-size: 1.5em;
   }
 
   h4 {
     margin-bottom: 0.4em;
+      font-family: 'Raleway', sans-serif;
   }
 }
 
