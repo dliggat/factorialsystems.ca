@@ -17,6 +17,7 @@ We provide technology and analysis solutions to a variety of business problems. 
 #### Data Science & Analytics
 * Expert-level SQL and Data ETL Skillset
 * Statistical Analysis & Forecasting
+* Python and R Scripting
 * Data Visualization
 * Implementation of Web Analytics Strategies (e.g. Mixpanel, Google Analytics)
 
